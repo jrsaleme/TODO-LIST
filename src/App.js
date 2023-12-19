@@ -10,7 +10,8 @@ const defaultTodos = [
   {text: 'Cortar cebolla', completed: true},
   {text: 'Migrar a react', completed: false},
   {text: 'Aprender Angular', completed: false},
-  {text: 'Comprar Maletas', completed: false}
+  {text: 'Comprar Mercaderia', completed: true},
+  {text: 'Comprar termotanque', completed: false}
 ];
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <TodoItem 
           key={todo.text}
           text={todo.text}
-          /*completed={todo.completed}*/
+          completed={todo.completed}
         />
        ))}
       </TodoList>
