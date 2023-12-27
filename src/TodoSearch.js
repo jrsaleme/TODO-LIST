@@ -1,3 +1,4 @@
+import './TodoSearch.css'
 import React from "react";
 
 function TodoSearch(){
@@ -6,14 +7,16 @@ function TodoSearch(){
     console.log('Los usuarios buscan ' + searchValue);
 
     return(
-        <input 
-        placeholder="Create SP User"
-        className="TodoSearch"
-        value={searchValue}
-        onChange={(event) => {
-            setSearchValue(event.target.value);
-        }}
-        />
+        <div className='contenedor-input'>
+            <input 
+            placeholder="Create SP User"
+            className="TodoSearch"
+            value={searchValue}
+            onChange={(event) => {
+                setSearchValue(event.target.value);
+            }}
+            />
+        </div>
     );
 }
 
