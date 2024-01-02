@@ -17,7 +17,7 @@
     font-weight: 400;
 }
 
-.TodoCounter-p--complete {
+.TodoItem-p--complete {
     text-decoration: line-through;
 }
 
