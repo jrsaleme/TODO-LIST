@@ -1,9 +1,9 @@
-import './CreateTodoButton.css';
+import './ModalBackground.css';
 
 function CreateTodoButton({ setOpenModal }) {
   return (
     <button
-      className="CreateTodoButton"
+      className="ModalBackground"
       onClick={
         /*(event) => {
            console.log('le diste click')

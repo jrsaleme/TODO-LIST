@@ -8,6 +8,7 @@ import { TodosError } from '../TodosError/Index';
 import { EmptyTodos } from '../EmptyTodos/Index';
 import { CreateTodoButton } from '../CreateTodoButton/Index';
 import { Modal } from "../Modal/Index";
+import { TodoForm } from "../TodoForm/Index.js";
 import { TodoContext } from "../TodoContext/Index";
 
 
@@ -20,6 +21,7 @@ function AppUi(){
     deleteTodo,
     openModal,
     setOpenModal,
+    
   } = React.useContext(TodoContext);
     return (
     <>
@@ -29,6 +31,8 @@ function AppUi(){
           <TodoList>
           {loading && 
             <>
+              <TodosLoading />
+              <TodosLoading />
               <TodosLoading />
             </>
           }
@@ -52,7 +56,7 @@ function AppUi(){
       
       {openModal && (
         <Modal>
-        Funcionalidad de agregar TODO
+          <TodoForm />
       </Modal>
       )}
 
